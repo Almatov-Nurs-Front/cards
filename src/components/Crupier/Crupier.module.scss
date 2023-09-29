@@ -1,0 +1,45 @@
+.red { color: red }
+
+.black { color: black }
+
+.cards {
+  position: relative;
+  height: 75px;
+  width: 76px;
+}
+
+.card {
+  position: absolute;
+
+  z-index: 2;
+}
+
+.downCard {
+  position: absolute;
+  left: 26px;
+
+  transform: rotate(90deg);
+}
+
+.players {
+  display: flex;
+  column-gap: 20px;
+
+  text-align: center;
+
+  padding: 0;
+  padding-left: 10px;
+  margin: 0 !important;
+}
+
+.player {
+  list-style: none;
+}
+
+.playerCards {
+  display: flex;
+
+  & > * {
+    margin-left: -25px;
+  }
+}
